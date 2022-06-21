@@ -1,0 +1,15 @@
+[package]
+name = "streamctl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+clap = { version = "3", features = ["derive"] }
+aws-config = "0.9"
+aws-sdk-kinesis = "0.9"
+seahash = "4.1.0"
+tokio = { version = "1", features = ["full"] }
+tracing-subscriber = "0.3"
